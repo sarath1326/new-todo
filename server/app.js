@@ -14,9 +14,15 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cors({
     
-    origin:"https://todoapp-pe8y.onrender.com"
+    origin:"https://todoapp-pe8y.onrender.com",
+    methods:["GET","POST","DELETE"]
 
 }));
+
+
+// "https://todoapp-pe8y.onrender.com"
+
+// "http://localhost:3000"
 
 
 
